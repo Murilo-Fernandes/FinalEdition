@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F8F9FA">
+
+    <!-- Card Container -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <!-- Cabeçalho com ícone do usuário -->
+            <ImageView
+                android:id="@+id/imgUserProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="24dp"
+                android:contentDescription="Ícone do usuário"
+                android:onClick="abrirPerfil"
+                android:src="@mipmap/bathead"
+                android:tint="#0E0101" />
+
+            <!-- Botão Scannear -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnScan"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="scannearQrCode"
+                android:text="Scannear QR Code"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#050000"
+                app:cornerRadius="8dp"
+                app:iconGravity="textStart"
+                app:iconTint="#FFFFFF"
+                app:rippleColor="#0B5ED7" />
+
+            <!-- Botão Criar Evento -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCriarEvento"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="criarEvento"
+                android:text="Cadastrar Evento"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#01040B"
+                app:cornerRadius="8dp"
+                app:iconGravity="textStart"
+                app:iconTint="#FFFFFF"
+                app:rippleColor="#0B5ED7" />
+
+            <!-- Botão Perfil do Usuário -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUserProfile"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:onClick="abrirPerfil"
+                android:text="Meu Perfil"
+                android:textColor="#0E0101"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="8dp"
+                app:icon="@mipmap/bathead"
+                app:iconGravity="textStart"
+                app:iconTint="#010710"
+                app:rippleColor="#E1F0FF"
+                app:strokeColor="#01050B"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
