@@ -77,16 +77,16 @@
                 android:id="@+id/btnIngressos"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Meus Ingressos"
+                android:layout_marginBottom="16dp"
+                android:text="Eventos que participei"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:iconTint="#FFFFFF"
-                app:iconGravity="textStart"
-                app:cornerRadius="8dp"
                 app:backgroundTint="#0D6EFD"
-                app:rippleColor="#0B5ED7"
-                android:layout_marginBottom="16dp"/>
+                app:cornerRadius="8dp"
+                app:iconGravity="textStart"
+                app:iconTint="#FFFFFF"
+                app:rippleColor="#0B5ED7" />
 
             <!-- Botão Meus Eventos -->
             <com.google.android.material.button.MaterialButton
@@ -109,17 +109,17 @@
                 android:id="@+id/btnSair"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Desconectar-se"
-                android:textColor="#0D6EFD"
+                android:text="Logout"
+                android:textColor="#EEEFF1"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:iconTint="#0D6EFD"
-                app:iconGravity="textStart"
+                app:backgroundTint="#F20303"
                 app:cornerRadius="8dp"
+                app:iconGravity="textStart"
+                app:iconTint="#ED0505"
+                app:rippleColor="#E1F0FF"
                 app:strokeColor="#0D6EFD"
-                app:strokeWidth="2dp"
-                app:backgroundTint="#FFFFFF"
-                app:rippleColor="#E1F0FF"/>
+                app:strokeWidth="2dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

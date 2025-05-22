@@ -31,7 +31,6 @@
                 android:layout_height="83dp"
                 android:layout_gravity="center"
                 android:src="@mipmap/img"
-                android:tint="#212529"
                 android:layout_marginBottom="16dp"/>
 
             <TextView

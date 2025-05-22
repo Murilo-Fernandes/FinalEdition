@@ -35,9 +35,9 @@ public class Perfil extends AppCompatActivity {
         txtUsuario = findViewById(R.id.txtUsuario);
 
         SharedPreferences sharedPref = getSharedPreferences("usuario_logado", MODE_PRIVATE);
-        String nome = sharedPref.getString("nome", "Usuário não encontrado");
+        String emailLogado = sharedPref.getString("email", "Email não encontrado");
 
-        txtUsuario.setText("Bem-vindo   " + nome);
+        txtUsuario.setText("Bem-vinda " + emailLogado);
 
         btnSair.setOnClickListener(v -> {
 

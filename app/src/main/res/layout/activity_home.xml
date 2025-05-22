@@ -32,8 +32,7 @@
                 android:layout_marginBottom="24dp"
                 android:contentDescription="Ícone do usuário"
                 android:onClick="abrirPerfil"
-                android:src="@mipmap/bathead"
-                android:tint="#0E0101" />
+                android:src="@mipmap/bathead" />
 
             <!-- Botão Scannear -->
             <com.google.android.material.button.MaterialButton
@@ -42,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginBottom="16dp"
-                android:onClick="scannearQrCode"
+                android:onClick="Scannear"
                 android:text="Scannear QR Code"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
@@ -60,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginBottom="16dp"
-                android:onClick="criarEvento"
+                android:onClick="Criar"
                 android:text="Cadastrar Evento"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
@@ -73,11 +72,27 @@
 
             <!-- Botão Perfil do Usuário -->
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMeusEventos"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:text="Meus Eventos"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#01040B"
+                app:cornerRadius="8dp"
+                app:iconGravity="textStart"
+                app:iconTint="#FFFFFF"
+                app:rippleColor="#0B5ED7" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnUserProfile"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:onClick="abrirPerfil"
+                android:onClick="perfil"
                 android:text="Meu Perfil"
                 android:textColor="#0E0101"
                 android:textSize="18sp"
